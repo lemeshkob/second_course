@@ -1,6 +1,4 @@
-# second_course
 
-Here will be uploaded projects from second course of university
 
 #OOP 
 
