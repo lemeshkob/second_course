@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор данных</title>
+
+    <style type="text/css">
+        footer {
+            position: fixed; /* Фиксированное положение */
+            left: 0; bottom: 0; /* Левый нижний угол */
+            padding: 10px; /* Поля вокруг текста */
+            font-style: italic;
+            width: 100%; /* Ширина слоя */
+            text-align: center;
+        }
+    </style>
+
+    <script type="text/javascript">
+        <!--
+        function calculateM(aFio) {
+            return (aFio.length * 3);
+        }
+        function calculateS(aFio) {
+            var result = 5;
+            var i;
+
+            for (i = 0; i < aFio.length; i++) {
+                if (aFio[i] == 'a' || aFio[i] == 'A' || aFio[i] == 'а' || aFio[i] == 'А') {
+                    result = i + 1 + result;
+                    break;
+                }
+            }
+            return (result);
+        }
+        function generateData(aMode) {
+            if (validateData()) {
+                var genData = generateRandom(
+                        calculateM(document.getElementById("fio").value),
+                        calculateS(document.getElementById("fio").value),
+                        document.getElementById("sampleSize").value,
+                        aMode
+                );
+                var mydoc = window.open("data:application/download;charset=utf-8;base64," + btoa(genData), "rrr");
+            }
+        }
+
+        function generateZ() {
+            var result = 0;
+            for (var i = 0; i < 12; i++) {
+                result = +result + Math.random();
+            }
+            return result - 6;
+        }
+        function generateRandom(valueM,
+                                valueS,
+                                aSampleSize,
+                                aMode) {
+            genData = "";
+            var tmpVal = +valueM + valueS;
+            var delimeter = '\r\n'
+            if (aMode == 2) {
+                delimeter = ',';
+            }
+            genData = genData + valueM + delimeter + tmpVal + delimeter;
+            for (var i = 0; i < aSampleSize; i++) {
+                genData = genData + Math.round((generateZ() * valueS + valueM)) + delimeter;
+            }
+            return genData;
+        }
+        function validateData() {
+
+            if (document.getElementById("fio").value == null ||
+                    document.getElementById("fio").value.length < 3) {
+                alert("Длинна ФИО должна быть более 2 символов");
+                return false;
+            }
+            if (document.getElementById("sampleSize").value == null ||
+                    document.getElementById("sampleSize").value.length < 1 ||
+                    document.getElementById("sampleSize").value < 100 ||
+                    document.getElementById("sampleSize").value.length > 500
+            ) {
+                alert("Размер выборки должен быть от 100 до 500");
+                return false;
+            }
+            return true;
+        }
+        //        -->
+    </script>
+</head>
+<body>
+<header><h1>Генерация данных:</h1></header>
+
+<article>
+    <form>
+
+        <p>
+            Введите имя, фамилию и отчество:
+        </P>
+        <input type="text" name="fio" id="fio" size="60" maxlength="250" title="Длинна ФИО от 2 до 250 символов">
+        <p>
+            Укажите размер выборки:
+        </P>
+        <input type="number" name="sampleSize" id="sampleSize" value="200" min="100" max="500"
+               title="Размер выборки находится в диапазоне от 100 до 500">
+        <P>
+            <input type="button" value="Загрузить в TXT формате" onclick="generateData(1)"
+                   title="Сформированные значения выводятся в файл построчно">
+            <input type="button" value="Загрузить в CSV формате" onclick="generateData(2)"
+                   title="Сформированные значения выводятся в файл через запятую">
+        </p>
+    </form>
+</article>
+<footer>
+    <p>
+    Дата модификации: 09.10.2016; Версия: 1.0.0
+    </p>
+</footer>
+</body>
+</html>
