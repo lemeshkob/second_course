@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>workers</title>
+</head>
+<body>
+    <table style="border: 2px solid black; text-align: center;">
+        <tr style="border: 1px solid black">
+            <td style="border: 1px solid black">position_id &nbsp</td>
+            <td style="border: 1px solid black">full_name</td>
+            <td style="border: 1px solid black">salary</td>
+            <td style="border: 1px solid black">sex</td>
+            <td style="border: 1px solid black">age</td>
+        </tr>
+    {% for worker in workers %}
+
+        <tr style="border: 1px solid black">
+        <td style="border: 1px solid black">{{ worker.position_id }}</td>
+        <td style="border: 1px solid black">{{ worker.full_name }}</td>
+        <td style="border: 1px solid black">{{ worker.salary }}</td>
+        <td style="border: 1px solid black">{{ worker.sex }}</td>
+        <td style="border: 1px solid black">{{ worker.age }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+</body>
+</html>

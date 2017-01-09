@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lab 8</title>
+    </head>
+    <body>
+    <table style="border: 2px solid black; text-align: center;">
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Requirements</td>
+        </tr>
+    {% for position in positions %}
+
+        <tr style="border: 1px solid black">
+        <td style="border: 1px solid black">{{ position.id }}</td>
+        <td style="border: 1px solid black">{{ position.name}}</td>
+        <td style="border: 1px solid black">{{ position.requirements}}</td>
+        </tr>
+    {% endfor %}
+
+    </table>
+    </body>
+</html>
