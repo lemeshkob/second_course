@@ -1,0 +1,47 @@
+@font-face { font-family: Harry P; font-weight: bold; src: url('HARRYP__.TTF'); }
+
+
+      html{
+        font-family: "Harry P";
+        background-image: url("bg.jpg");
+
+      }
+
+      .par1{
+        text-align: center;
+        font-size: 40px;
+        color: black;
+      }
+
+      h1{
+        font-size: 100px;
+        color: gold;
+        text-shadow: 2px 2px grey;
+        text-align: center;
+        margin: -0.2px;
+      }
+
+      h2{
+        text-align: center;
+        font-size: 40px;
+      }
+
+      #link1{
+        color:gold;
+        text-shadow: 2px 2px grey;
+        font-size: 60px;
+        text-decoration: none;
+      }
+
+    #link1:hover{
+      color: #000000;
+      border-radius: 20px;
+    }
+
+.boy_who_lived{
+    position: fixed;
+    top: 15%;
+    left: 32%;
+}
+
+

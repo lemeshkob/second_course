@@ -1,78 +1,88 @@
-finda <- function(x)
-{
-  ylist <- list()
-  a <- 0
-  n <- length(x)
-  for (i in 1:n)
-  {
-    a <- a + x[i]
-    
-  }
-  a <- a/n
-  return(a)
-}
-findsigma <- function(x)
-{
-  sigma <- 0
-  n <- length(x)
-  for (i in 1:n)
-  {
-    sigma <- sigma + (x[i]-mean(x))^2
-  }
-  sigma <- sigma/n
-  return(sigma)
-}
+setwd("C:\\Users\\lemes\\Desktop\\STUDY\\MS\\3")
 
+inputData <- scan('data.txt', vector('integer'))
 
-
-
-
-#записуемо данні у файл
-inputData <- read.table('data.txt', col.names = c('Value'))
-inputData
 
 #робимо вектор з вхідної таблиці inpudData
-inputVector <-as.vector(t(inputData))
-inputVector
+data <-as.vector(t(inputData))
+data
 
-# об'єм вибірки
-n <- length(inputVector)
-n
 
-#p(дов)
-p <- 0.95
-p
+n <- length(data) 
+p <- 0.95 
 
-#дисперсія
-Despertion <- var(inputVector)
-Despertion
 
-#математичне сподівання
-matSp <- mean(inputVector)
-matSp
+error <- qnorm(p) * sd(data) / sqrt(n) 
 
-#сер. кв. відхилення
-serKv <- sqrt(findsigma(inputVector))
-serKv
 
-#виправлена дисперсія
-corDes <- (n/(n - 1)) * Despertion
-corDes
+sd <- sqrt((n/(n - 1)) * var(data)) * sqrt(n - 1) 
+upper <- qchisq((1 + p) / 2, n - 1) 
+lower <- qchisq((1 - p) / 2, n - 1) 
 
-#виправлене сер. кв. відхилення
-corSerKv <- sqrt(corDes)
-corSerKv
+mean(data) + c(-error, error) 
+sd / c(sqrt(upper), sqrt(lower)) 
 
-#pnorm() , qnorm() - вбудовані функції 
-z <- qnorm(0.5+p/2)
-error <- z * serKv / sqrt(n)
-#Обрахуємо інтервали
-matSp + c(-error, error)
-k <- corSerKv * sqrt(n - 1)
-#Нижня границя
-x1 <- qchisq((1 + p) / 2, n - 1)
-x1
-#Верхня границя
-x2 <- qchisq((1 - p) / 2, n - 1)
-x2
-k / c(sqrt(x1), sqrt(x2))
+x<-list() 
+means_up<-list() 
+means_down<-list() 
+sds_up<-list() 
+sds_down<-list() 
+j=0 
+for (i in 55:99){ 
+  j=j+1 
+  x[j]<-i 
+  p<-i/100 
+  error <- qnorm(p) * sd(data) / sqrt(n) 
+  
+  
+  sd <- sqrt((n/(n - 1)) * var(data)) * sqrt(n - 1) 
+  upper <- qchisq((1 + p) / 2, n - 1) 
+  lower <- qchisq((1 - p) / 2, n - 1) 
+  means_up[j]<-mean(data) + error 
+  means_down[j]<-mean(data) - error 
+  sds_up[j]<-sd / sqrt(lower) 
+  sds_down[j]<-sd / sqrt(upper) 
+} 
+plot(x,means_up,type = "l",ylim = c(50,100)) 
+for(j in 2:length(x)){ 
+  lines(c(x[j-1],x[j]),c(means_down[j-1],means_down[j])) 
+} 
+
+x<-list() 
+means_up<-list() 
+means_down<-list() 
+sds_up<-list() 
+sds_down<-list() 
+j=0 
+dat<-data 
+for (i in 20:length(data)){ 
+  j=j+1 
+  x[j]<-i 
+  p<-0.95 
+  data<-dat[1:i] 
+  n <- length(data) 
+  error <- qnorm(p) * sd(data) / sqrt(n) 
+  sd <- sqrt((n/(n - 1)) * var(data)) * sqrt(n - 1) 
+  upper <- qchisq((1 + p) / 2, n - 1) 
+  lower <- qchisq((1 - p) / 2, n - 1) 
+  means_up[j]<-mean(data) + error 
+  means_down[j]<-mean(data) - error 
+  sds_up[j]<-sd / sqrt(lower) 
+  sds_down[j]<-sd / sqrt(upper) 
+} 
+plot(x,means_up,type = "l", ylim=c(20, 30)) 
+for(j in 2:length(x)){ 
+  lines(c(x[j-1],x[j]),c(means_down[j-1],means_down[j])) 
+} 
+
+Avg = mean(data) 
+
+Ser_Vidh = sd(data) 
+Desp <- Ser_Vidh^2 
+t<- 1.976 
+SV = sqrt(length(data) * Desp/(length(data) - 1)) 
+NMatSpod = Avg - (t*SV/sqrt(length(data))) 
+VMatSpod = Avg + (t*SV/sqrt(length(data))) 
+q = 0.137; 
+NMezha = SV*(1-q) 
+VMezha = SV*(1+q)

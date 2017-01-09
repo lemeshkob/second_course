@@ -1,0 +1,42 @@
+E:\NASTIIA\university\3 semestеr\люд маш\lab2\lab2\bin\Debug\lab2.exe.config
+E:\NASTIIA\university\3 semestеr\люд маш\lab2\lab2\bin\Debug\lab2.exe
+E:\NASTIIA\university\3 semestеr\люд маш\lab2\lab2\bin\Debug\lab2.pdb
+E:\NASTIIA\university\3 semestеr\люд маш\lab2\lab2\obj\Debug\lab2.csprojResolveAssemblyReference.cache
+E:\NASTIIA\university\3 semestеr\люд маш\lab2\lab2\obj\Debug\lab2.Clinics.resources
+E:\NASTIIA\university\3 semestеr\люд маш\lab2\lab2\obj\Debug\lab2.Properties.Resources.resources
+E:\NASTIIA\university\3 semestеr\люд маш\lab2\lab2\obj\Debug\lab2.csproj.GenerateResource.Cache
+E:\NASTIIA\university\3 semestеr\люд маш\lab2\lab2\obj\Debug\lab2.exe
+E:\NASTIIA\university\3 semestеr\люд маш\lab2\lab2\obj\Debug\lab2.pdb
+E:\NASTIIA\university\3 term\LMW\lab2\lab2\bin\Debug\lab2.exe.config
+E:\NASTIIA\university\3 term\LMW\lab2\lab2\obj\Debug\lab2.exe
+E:\NASTIIA\university\3 term\LMW\lab2\lab2\obj\Debug\lab2.pdb
+E:\NASTIIA\university\3 term\LMW\lab4\lab2\bin\Debug\lab2.exe.config
+E:\NASTIIA\university\3 term\LMW\lab4\lab2\obj\Debug\lab2.exe
+E:\NASTIIA\university\3 term\LMW\lab4\lab2\obj\Debug\lab2.pdb
+E:\NASTIIA\university\3 term\LMW\lab4\lab2\bin\Debug\lab2.exe
+E:\NASTIIA\university\3 term\LMW\lab4\lab2\bin\Debug\lab2.pdb
+E:\NASTIIA\university\3 term\LMW\lab4\lab2\obj\Debug\lab2.csprojResolveAssemblyReference.cache
+E:\NASTIIA\university\3 term\LMW\lab4\lab2\obj\Debug\lab2.Clinics.resources
+E:\NASTIIA\university\3 term\LMW\lab4\lab2\obj\Debug\lab2.Properties.Resources.resources
+E:\NASTIIA\university\3 term\LMW\lab4\lab2\obj\Debug\lab2.csproj.GenerateResource.Cache
+E:\NASTIIA\university\3 term\LMW\lab4\lab2\obj\Debug\lab2.Menu.resources
+C:\Users\Admin\Desktop\LMW\LMW\lab4\lab2\bin\Debug\lab2.exe.config
+C:\Users\Admin\Desktop\LMW\LMW\lab4\lab2\obj\Debug\lab2.exe
+C:\Users\Admin\Desktop\LMW\LMW\lab4\lab2\obj\Debug\lab2.pdb
+C:\Users\Admin\Desktop\LMW\LMW\lab4\lab2\bin\Debug\lab2.exe
+C:\Users\Admin\Desktop\LMW\LMW\lab4\lab2\bin\Debug\lab2.pdb
+C:\Users\Admin\Desktop\LMW\LMW\lab4\lab2\obj\Debug\lab2.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\LMW\LMW\lab4\lab2\obj\Debug\lab2.Clinics.resources
+C:\Users\Admin\Desktop\LMW\LMW\lab4\lab2\obj\Debug\lab2.Menu.resources
+C:\Users\Admin\Desktop\LMW\LMW\lab4\lab2\obj\Debug\lab2.Properties.Resources.resources
+C:\Users\Admin\Desktop\LMW\LMW\lab4\lab2\obj\Debug\lab2.csproj.GenerateResource.Cache
+C:\Users\lemes\Desktop\STUDY\LMV\lmw_lab_2_and_4\lab2\bin\Debug\lab2.exe.config
+C:\Users\lemes\Desktop\STUDY\LMV\lmw_lab_2_and_4\lab2\obj\Debug\lab2.exe
+C:\Users\lemes\Desktop\STUDY\LMV\lmw_lab_2_and_4\lab2\obj\Debug\lab2.pdb
+C:\Users\lemes\Desktop\STUDY\LMV\lmw_lab_2_and_4\lab2\bin\Debug\lab2.exe
+C:\Users\lemes\Desktop\STUDY\LMV\lmw_lab_2_and_4\lab2\bin\Debug\lab2.pdb
+C:\Users\lemes\Desktop\STUDY\LMV\lmw_lab_2_and_4\lab2\obj\Debug\lab2.csprojResolveAssemblyReference.cache
+C:\Users\lemes\Desktop\STUDY\LMV\lmw_lab_2_and_4\lab2\obj\Debug\lab2.Clinics.resources
+C:\Users\lemes\Desktop\STUDY\LMV\lmw_lab_2_and_4\lab2\obj\Debug\lab2.Menu.resources
+C:\Users\lemes\Desktop\STUDY\LMV\lmw_lab_2_and_4\lab2\obj\Debug\lab2.Properties.Resources.resources
+C:\Users\lemes\Desktop\STUDY\LMV\lmw_lab_2_and_4\lab2\obj\Debug\lab2.csproj.GenerateResource.Cache

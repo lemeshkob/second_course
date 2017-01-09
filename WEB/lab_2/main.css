@@ -1,0 +1,74 @@
+@font-face { font-family: Harry P; font-weight: bold; src: url('HARRYP__.TTF'); }
+
+html{
+    font-family: "Harry P";
+    background-image: url("bg.jpg");
+    background-attachment: fixed;
+}
+
+.navigation_bar{
+    position: absolute;
+    top: 4%;
+    left: 24%;
+    z-index: 1;
+}
+
+.navigation_bar a{
+    text-decoration: none;
+    font-size: 60px;
+    color: gold;
+    text-shadow: 2px 2px grey;
+}
+
+.navigation_bar a:hover{
+    color: black;
+}
+
+#to_top{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#potter_gif{
+    position: absolute;
+    top: 20%;
+    left: 23%;
+    width: 750px;
+    height: 375px;
+}
+
+#logo{
+    background: url(harry-potter-magic-spells-lightning-yellow.png);
+    display: block;
+    width: 178px;
+    height: 178px;
+    position: absolute;
+    right: 0;
+    top: 3;
+    z-index: 1;
+}
+
+#logo:hover{
+    background: url(harry-potter-magic-spells-lightning-black.png);
+    
+}
+
+.fish{
+    position: absolute;
+    top: 100%;
+    left: 2%;
+    font-size: 35px;
+    background-color: aliceblue;
+    color: #444444;
+}
+
+/* конфликтная ситуация*/
+#conflict{
+    color: gold !important;
+}
+
+#conflict:hover{
+    color: black !important;
+}
+
